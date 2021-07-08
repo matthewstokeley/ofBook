@@ -660,7 +660,7 @@ for (int p=0; p<500; p+=1) {
 
 Remember how we saved our drawings that we made with the basic shape brushes by doing a screen capture? Well, we can also save drawings as a PDF. A PDF stores the graphics as a series of geometric objects rather than as a series of pixel values. So, if we render out our polylines as a PDF, we can open it in a vector graphics editor (like [Inkscape](http://www.inkscape.org/en/) or Adobe Illustrator) and modify our polylines in all sorts of ways. For example, see figure 17 where I colored and blurred the polylines to create a glowing effect.
 
-Once we have a PDF, we could also use it to blow up our polyines to create a massive, high resolution print.
+Once we have a PDF, we could also use it to blow up our polylines to create a massive, high resolution print.
 
 To do any of this, we need to use [`ofBeginSaveScreenAsPDF(...)`](http://openframeworks.cc/documentation/graphics/ofGraphics.html#!show_ofBeginSaveScreenAsPDF) and [`ofEndSaveScreenAsPDF()`](http://openframeworks.cc/documentation/graphics/ofGraphics.html#show_ofEndSaveScreenAsPDF). When we call `ofBeginSaveScreenAsPDF(...)`, any subsequent drawing commands will output to a PDF *instead of* being drawn to the screen. `ofBeginSaveScreenAsPDF(...)` takes one required argument, a `string` that contains the desired filename for the PDF. (The PDF will be saved into `./bin/data/` unless you specify an alternate path). When we call `ofEndSaveScreenAsPDF()`, the PDF is saved and drawing commands begin outputting back to the screen.
 

@@ -446,12 +446,12 @@ void ofApp::draw(){
 }
 ```
 
-There's a ton more we can do with noise, we'll leave it for now but encourage you to look at the noise examples that come with openFrameworks, which show how noise can be use to create lifelike movement. Also, we encourage readers to investigate the work of [Ken Perlin](http://mrl.nyu.edu/~perlin/), author of the simplex noise algorithm -- he's got great examples of how you can use noise in creative, playful ways.
+There's a ton more we can do with noise, we'll leave it for now but encourage you to look at the noise examples that come with openFrameworks, which show how noise can be used to create lifelike movement. Also, we encourage readers to investigate the work of [Ken Perlin](http://mrl.nyu.edu/~perlin/), author of the simplex noise algorithm -- he's got great examples of how you can use noise in creative, playful ways.
 
 
 ## Simulation
 
-If you have a photograph of an object at one point in time, you know its position. If you have a photograph of an object at another point in time and the camera hasn't changed, you can measure its velocity, i.e., its change in distance over time. If you have a photograph at three points in time, you can measure its acceleration, i.e., how much the speed changing over time.
+If you have a photograph of an object at one point in time, you know its position. If you have a photograph of an object at another point in time and the camera hasn't changed, you can measure its velocity, i.e., its change in distance over time. If you have a photograph at three points in time, you can measure its acceleration, i.e., how much the speed changes over time.
 
 The individual measurements compared together tell us something about movement. Now, we're going to go in the opposite direction. Think about how we can use measurements like speed and acceleration to control position.
 
